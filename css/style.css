@@ -1,0 +1,74 @@
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-width: 18rem;
+}
+
+.h1 {
+  display: none;
+}
+
+.description {
+  text-align: center;
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  max-width: 1280px;
+  text-align: center;
+}
+
+.table {
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact_information {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.h2 {
+  margin: 0;
+  padding-top: 2rem;
+}
