@@ -1,3 +1,7 @@
+* {
+  font-size: 20px;
+}
+
 .header_container {
   display: flex;
   justify-content: center;
@@ -50,6 +54,10 @@
 .contact_information {
   display: flex;
   flex-direction: column;
+}
+
+.contact_information_link{
+  text-decoration: none;
 }
 
 .socials_container {
