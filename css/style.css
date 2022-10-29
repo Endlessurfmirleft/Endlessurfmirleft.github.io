@@ -104,10 +104,11 @@ body{
   width: 20rem;
   box-shadow: 0 2px 10px lightgray;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 0.4rem;
   border-collapse: collapse;
+  min-height: 25rem;
 }
 .apartment_title{
   background-color: #FEE140;
