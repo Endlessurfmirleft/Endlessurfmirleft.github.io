@@ -4,6 +4,7 @@
 
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header_container {
@@ -244,11 +245,11 @@ body{
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 800px) {
   .main_apartments_container {
     flex-direction: column;
   }
-  .fix_header{
+  /*.fix_header{
     min-height: 6rem;
   }
   .logo_container{
@@ -283,5 +284,5 @@ body{
   }
   .apartment_description{
     font-size: 1.9rem;
-  }
+  }*/
 }
