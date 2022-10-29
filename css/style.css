@@ -29,26 +29,26 @@ body{
 
 .fix_header{
   position: fixed;
-  min-height: 50px;
+  min-height: 3em;
   top: 0;
   right: 0;
   background-color: #FEE140;
   background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
   display: flex;
   width: 100%;
-  box-shadow: 0 5px 5px #00000069;
+  box-shadow: 0 0.5rem 0.5rem #00000069;
 }
 
 .logo_fixed{
-  max-height: 35px;
+  max-height: 2rem;
 }
 
 .logo_container{
   max-width: 12rem;
-  border-radius: 1000px;
+  border-radius: 100rem;
   padding:2rem 2rem 3rem 2rem;
   background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  box-shadow: rgba(0,0,0,0.8) 0 0 1rem;
   border-collapse: collapse;
 }
 .logo_image {
@@ -56,7 +56,7 @@ body{
 }
 
 .h1 {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: normal;
   display: none;
 }
@@ -64,8 +64,8 @@ body{
 .description {
   text-align: center;
   color: white;
-  font-size: 28px;
-  letter-spacing: 8px;
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
 }
 
 #main {
@@ -73,7 +73,21 @@ body{
   width: 100%;
   justify-content: center;
 }
-
+.general_description{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.general_description_h2{
+  padding: 0 2rem;
+}
+.general_description_p{
+  padding: 0 2rem;
+}
 .main_apartments_container{
   display: flex;
   width: 100%;
@@ -86,10 +100,45 @@ body{
 
 .apartment_container{
   display: flex;
-  min-height: 400px;
-  min-width: 400px;
-  border: 1px solid black;
-  gap: 2rem;
+  height: fit-content;
+  width: 20rem;
+  box-shadow: 0 2px 10px lightgray;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  border-collapse: collapse;
+}
+.apartment_title{
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.apartment_title_h3{
+  padding: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.apartment_picture{
+  width: inherit;
+  height: auto;
+}
+
+.apartment_image{
+  width: inherit;
+  max-height: 15rem;
+  border-bottom: 1px solid gray;
+}
+
+.apartment_description{
+  padding:1rem;
+  font-weight: bold;
 }
 
 
@@ -99,15 +148,15 @@ body{
   justify-content: center;
   align-content: center;
   gap: 2rem;
-  max-width: 1280px;
+  max-width: 128rem;
   text-align: center;
   padding-top: 4rem;
   margin: 0 auto;
 }
 
 .table {
-  border: 1px solid lightgray;
-  border-radius: 2px;
+  border: 0.1rem solid lightgray;
+  border-radius: 0.2rem;
 }
 
 .contact_container {
@@ -117,6 +166,7 @@ body{
   gap: 1rem;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .contact_information {
