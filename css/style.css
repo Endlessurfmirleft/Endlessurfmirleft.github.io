@@ -37,6 +37,7 @@ body{
   display: flex;
   width: 100%;
   box-shadow: 0 0.5rem 0.5rem #00000069;
+  z-index: 2;
 }
 
 .logo_fixed{
@@ -65,7 +66,7 @@ body{
   text-align: center;
   color: white;
   font-size: 1.6rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
 }
 
 #main {
@@ -78,15 +79,20 @@ body{
   justify-content: center;
   width: 100%;
   align-items: center;
-  gap: 1rem;
   flex-direction: column;
   padding-top: 2rem;
 }
 .general_description_h2{
   padding: 0 2rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 .general_description_p{
   padding: 0 2rem;
+  max-width: 40rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(0 0 0 / 80%);
 }
 .main_apartments_container{
   display: flex;
@@ -101,14 +107,26 @@ body{
 .apartment_container{
   display: flex;
   height: fit-content;
-  width: 20rem;
-  box-shadow: 0 2px 10px lightgray;
+  width: 18rem;
+  box-shadow: 0 2px 10px lightgrey;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 0.4rem;
   border-collapse: collapse;
-  min-height: 25rem;
+  background: white;
+  min-height: 18rem;
+}
+.apartment_price{
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  background: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 .apartment_title{
   background-color: #FEE140;
@@ -121,27 +139,41 @@ body{
   border-bottom: 1px solid gray;
 }
 .apartment_title_h3{
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin: 0;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.separator{
+  border:1px solid #80808024;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .apartment_picture{
+  position: relative;
   width: inherit;
   height: auto;
 }
 
 .apartment_image{
   width: inherit;
-  max-height: 15rem;
+  max-height: 14rem;
   border-bottom: 1px solid gray;
 }
 
 .apartment_description{
   padding:1rem;
-  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-align: center;
 }
-
+#surf_lessons{
+  background: #8080801f;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
 
 .price_container {
   display: flex;
@@ -168,6 +200,7 @@ body{
   flex-direction: column;
   text-align: center;
   padding-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .contact_information {
@@ -205,4 +238,50 @@ body{
 .h2 {
   margin: 0;
   padding-top: 2rem;
+}
+
+.separator_contact{
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1240px) {
+  .main_apartments_container {
+    flex-direction: column;
+  }
+  .fix_header{
+    min-height: 6rem;
+  }
+  .logo_container{
+    max-width: 22rem;
+  }
+  .logo_image{
+    width: 22rem;
+  }
+  .description{
+    font-size: 3.6rem;
+  }
+  .general_description_h2{
+    width: auto;
+    min-width: 80%;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .general_description_p{
+    font-size: 2rem;
+  }
+  .apartment_container{
+    width: 40rem;
+  }
+  .apartment_title_h3{
+    font-size: 2.2rem;
+  }
+  .apartment_image{
+    min-height: 30rem;
+  }
+  .apartment_price{
+    font-size: 2.2rem;
+  }
+  .apartment_description{
+    font-size: 1.9rem;
+  }
 }
