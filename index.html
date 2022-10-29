@@ -22,6 +22,15 @@
 
     <title>Endless Surf Mirleft - Guest House</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/style_mobile.css';
+            document.getElementsByTagName('HEAD')[0].appendChild(link);
+        }
+    </script>
 </head>
 <body>
 <header>
