@@ -62,11 +62,19 @@ body{
   display: none;
 }
 
+.description_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .description {
   text-align: center;
   color: white;
   font-size: 1.6rem;
   letter-spacing: 0.3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 #main {
@@ -206,10 +214,14 @@ body{
 .contact_information {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .contact_information_link{
   text-decoration: none;
+}
+.contact_sub_information_address{
+  text-align: left;
 }
 
 .fixed_main_container {
@@ -244,44 +256,33 @@ body{
   margin: 0 auto;
 }
 
+.contact_sub_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact_picture{
+  max-width: 20rem;
+  box-shadow: 0 2px 10px lightgrey;
+}
+
+.contact_sub_information{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 1280px) {
   .main_apartments_container {
     flex-direction: column;
   }
-  /*.fix_header{
-    min-height: 6rem;
+  .contact_sub_container {
+    flex-direction: column;
   }
-  .logo_container{
-    max-width: 22rem;
-  }
-  .logo_image{
-    width: 22rem;
-  }
-  .description{
-    font-size: 3.6rem;
-  }
-  .general_description_h2{
-    width: auto;
-    min-width: 80%;
-    text-align: center;
-    font-size: 2.2rem;
-  }
-  .general_description_p{
-    font-size: 2rem;
-  }
-  .apartment_container{
-    width: 40rem;
-  }
-  .apartment_title_h3{
-    font-size: 2.2rem;
-  }
-  .apartment_image{
-    min-height: 30rem;
-  }
-  .apartment_price{
-    font-size: 2.2rem;
-  }
-  .apartment_description{
-    font-size: 1.9rem;
-  }*/
 }
